@@ -1,9 +1,18 @@
 
-import { Pressable, StyleSheet, Text, View } from 'react-native'
+import { 
+  Pressable, 
+  StyleSheet, 
+  Text, 
+  View 
+} from 'react-native'
 
 export default function App() {
 
-  const {container, btn, btnText} = styles
+  const {
+    container, 
+    btn, 
+    btnText
+  } = styles
 
   const handleClick = () =>  alert("ok")
 
@@ -27,7 +36,7 @@ const styles = StyleSheet.create({
   btn:{
     width:200,
     height:40,
-    backgroundColor:'#000FF',
+    backgroundColor:'#0000FF',
     justifyContent:'center',
     alignItems:'center'
   },
