@@ -1,35 +1,22 @@
-import { Link, router, Stack } from "expo-router";
+import { Stack } from "expo-router";
 import { View,Text,StyleSheet, Pressable, Button } from "react-native";
 
-export default function Screen(){
+export default function  Termos(){
 
     const {container,button} = styles;
-
-    const handleClick = () => {
-        router.navigate('/about')
-    }
-
-    const  handleAddButton = () => {
-        alert("ok")
-    }
-
 
     return (
         <View style={container}>
             <Stack.Screen 
                 options={{
-                    title: 'Inicio',
-                    headerRight: () => <Button onPress={handleAddButton} title="Adicionar" />
+                    title: 'Termos',
                 }}
             />
-            <Text>Ola,Tudo bem</Text>
+           
           
-                <Pressable onPress={handleClick} style={button}>
-                    <Text>Sobre </Text>
+                <Pressable  style={button}>
+                    <Text>Termos</Text>
                 </Pressable>
-
-                <Link href="/profile/1">Perfil 1</Link>
-                <Link href="/profile/2">Perfil 2 </Link>
         </View>
     )
 }
