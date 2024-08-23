@@ -6,7 +6,7 @@ export default function TabLayout(){
     return(
         <Tabs screenOptions={{tabBarActiveTintColor: '#0000FF'}}>
             <Tabs.Screen 
-                name="Home"
+                name="home"
                 options={{
                     title:'Inicio',
                     tabBarIcon: ({color}) => <FontAwesone 
@@ -17,7 +17,15 @@ export default function TabLayout(){
                 }}
             />
 
-            <Tabs.Screen 
+           
+
+            
+        </Tabs>
+    )
+}
+
+/*
+ <Tabs.Screen 
                 name="Categories"
                 options={{
                     title:'Inicio',
@@ -40,8 +48,4 @@ export default function TabLayout(){
                     />
                 }}
             />
-
-            
-        </Tabs>
-    )
-}
+*/
