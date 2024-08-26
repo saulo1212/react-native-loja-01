@@ -17,16 +17,20 @@ export default function TabLayout(){
                 }}
             />
 
-           
+            <Tabs.Screen 
+                name="about"
+                options={{
+                    title:'Sobre mim',
+                    tabBarIcon: ({color}) => <FontAwesone 
+                        size={28}
+                        name="user"
+                        color={color}
+                    />
+                }}
+            />
 
-            
-        </Tabs>
-    )
-}
-
-/*
- <Tabs.Screen 
-                name="Categories"
+            <Tabs.Screen 
+                name="categories"
                 options={{
                     title:'Inicio',
                     tabBarIcon: ({color}) => <FontAwesone 
@@ -37,15 +41,6 @@ export default function TabLayout(){
                 }}
             />
 
-            <Tabs.Screen 
-                name="About"
-                options={{
-                    title:'Sobre mim',
-                    tabBarIcon: ({color}) => <FontAwesone 
-                        size={28}
-                        name="user"
-                        color={color}
-                    />
-                }}
-            />
-*/
+        </Tabs>
+    )
+}
