@@ -32,6 +32,7 @@ export default function TabLayout(){
             <Tabs.Screen 
                 name="categories"
                 options={{
+                    headerShown: false,
                     title:'Inicio',
                     tabBarIcon: ({color}) => <FontAwesone 
                         size={28}
